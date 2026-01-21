@@ -1,1 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login - SPATIO PROPERTY SERVICES</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../src/css/styles.css">
+    <style>
+        .login-container {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            background: linear-gradient(rgba(30, 27, 75, 0.9), rgba(30, 27, 75, 0.8)), 
+                        url('https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&q=80&w=2000');
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .login-card {
+            background: white;
+            border-radius: 1.5rem;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        
+        .login-header {
+            background: linear-gradient(135deg, var(--spatio-primary), var(--spatio-secondary));
+            color: white;
+            padding: 2.5rem;
+            text-align: center;
+        }
+        
+        .login-body {
+            padding: 2.5rem;
+        }
+        
+        .form-control {
+            padding: 0.875rem 1rem;
+            border-radius: 0.75rem;
+            border: 2px solid #e2e8f0;
+        }
+        
+        .form-control:focus {
+            border-color: var(--spatio-primary);
+            box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6 col-lg-5">
+                    <div class="login-card">
+                        <div class="login-header">
+                            <h2 class="mb-1">SPATIO <span>ADMIN</span></h2>
+                            <p class="mb-0">Property Services Management</p>
+                        </div>
+                        
+                        <div class="login-body">
+                            <!-- Error Alert -->
+                            <div class="alert alert-danger d-none" id="loginError" role="alert">
+                                Invalid email or password. Please try again.
+                            </div>
+                            
+                            <!-- Login Form -->
+                            <form id="loginForm">
+                                <div class="mb-4">
+                                    <label class="form-label">Email Address</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text">
+                                            <i class="fas fa-envelope"></i>
+                                        </span>
+                                        <input type="email" id="email" class="form-control" 
+                                               placeholder="admin@spatioproperty.co.ke" required>
+                                    </div>
+                                </div>
+                                
+                                <div class="mb-4">
+                                    <label class="form-label">Password</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text">
+                                            <i class="fas fa-lock"></i>
+                                        </span>
+                                        <input type="password" id="password" class="form-control" 
+                                               placeholder="Enter your password" required>
+                                    </div>
+                                </div>
+                                
+                                <div class="d-grid mb-4">
+                                    <button type="submit" class="btn btn-primary btn-lg">
+                                        <i class="fas fa-sign-in-alt me-2"></i> Sign In
+                                    </button>
+                                </div>
+                                
+                                <div class="text-center">
+                                    <p class="text-muted small mb-0">
+                                        <i class="fas fa-shield-alt me-1"></i>
+                                        Secure admin access only
+                                    </p>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    
+                    <!-- Back to Website -->
+                    <div class="text-center mt-4">
+                        <a href="index.html" class="text-white text-decoration-none">
+                            <i class="fas fa-arrow-left me-2"></i> Back to Main Website
+                        </a>
+                    </div>
+                    
+                    <!-- Copyright -->
+                    <div class="text-center mt-4">
+                        <p class="text-white-50 small mb-0">
+                            &copy; 2024 SPATIO PROPERTY SERVICES. All rights reserved.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+    <script src="../src/js/supabase.js"></script>
+    <script src="../src/js/auth.js"></script>
+</body>
+</html>
