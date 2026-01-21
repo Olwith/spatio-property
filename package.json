@@ -1,1 +1,23 @@
-
+{
+  "name": "spatio-property-services",
+  "version": "1.0.0",
+  "description": "Premium Real Estate & Geospatial Services Platform",
+  "main": "src/js/app.js",
+  "scripts": {
+    "dev": "live-server public --port=3000",
+    "build": "echo 'No build step required for vanilla JS'",
+    "deploy": "netlify deploy --prod"
+  },
+  "keywords": [
+    "real-estate",
+    "gis",
+    "property",
+    "mapping",
+    "supabase"
+  ],
+  "author": "SPATIO PROPERTY SERVICES",
+  "license": "MIT",
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}
