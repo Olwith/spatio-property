@@ -1562,309 +1562,351 @@ class SpatioApp {
             `
         },
         {
-            id: 'auctioneering',
-            title: 'Auctioneering Services',
-            icon: 'fa-gavel',
-            description: 'Bank and registered auctioneering services.',
-            details: `
-                <div class="service-details">
-                    <h4 class="mb-4">Professional Auctioneering Services</h4>
-                    <p class="lead">Licensed auctioneering services for banks, financial institutions, and private clients</p>
-                    
-                    <div class="row mt-4">
-                        <div class="col-md-6">
-                            <h6 class="text-primary mb-3">Bank & Financial Institution Services:</h6>
-                            <div class="list-group">
-                                <a href="#" class="list-group-item list-group-item-action">
-                                    <div class="d-flex w-100 justify-content-between">
-                                        <h6 class="mb-1"><i class="fas fa-university text-primary me-2"></i>Mortgage Recovery</h6>
-                                        <span class="badge bg-danger">Statutory</span>
-                                    </div>
-                                    <p class="mb-1 small">Statutory notices, property possession, and forced sale auctions for defaulted loans</p>
-                                </a>
-                                
-                                <a href="#" class="list-group-item list-group-item-action">
-                                    <div class="d-flex w-100 justify-content-between">
-                                        <h6 class="mb-1"><i class="fas fa-file-invoice-dollar text-success me-2"></i>Debt Collection</h6>
-                                        <span class="badge bg-success">Commercial</span>
-                                    </div>
-                                    <p class="mb-1 small">Commercial debt recovery through attachment and sale of movable assets</p>
-                                </a>
-                                
-                                <a href="#" class="list-group-item list-group-item-action">
-                                    <div class="d-flex w-100 justify-content-between">
-                                        <h6 class="mb-1"><i class="fas fa-car text-warning me-2"></i>Vehicle Auctions</h6>
-                                        <span class="badge bg-warning">Monthly</span>
-                                    </div>
-                                    <p class="mb-1 small">Regular vehicle auctions for repossessed cars, trucks, and construction equipment</p>
-                                </a>
-                                
-                                <a href="#" class="list-group-item list-group-item-action">
-                                    <div class="d-flex w-100 justify-content-between">
-                                        <h6 class="mb-1"><i class="fas fa-warehouse text-info me-2"></i>Stock & Inventory</h6>
-                                        <span class="badge bg-info">On Demand</span>
-                                    </div>
-                                    <p class="mb-1 small">Auction of seized inventory, machinery, and business assets</p>
-                                </a>
+            {
+    id: 'auctioneering',
+    title: 'Auctioneering Services',
+    icon: 'fa-gavel',
+    description: 'Bank and registered auctioneering services for properties and lands.',
+    details: `
+        <div class="service-details">
+            <h4 class="mb-4">Professional Property & Land Auctioneering Services</h4>
+            <p class="lead">Licensed auctioneering services specializing in residential, commercial properties, and land parcels for banks and private clients</p>
+            
+            <div class="row mt-4">
+                <div class="col-md-6">
+                    <h6 class="text-primary mb-3">Property Auction Services:</h6>
+                    <div class="list-group">
+                        <a href="#" class="list-group-item list-group-item-action">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h6 class="mb-1"><i class="fas fa-home text-primary me-2"></i>Residential Properties</h6>
+                                <span class="badge bg-primary">Monthly</span>
+                            </div>
+                            <p class="mb-1 small">Houses, apartments, townhouses, and bungalows from bank repossessions and private sellers</p>
+                            <small class="text-muted">Includes: 3-bedroom houses, apartments, bungalows, townhouses</small>
+                        </a>
+                        
+                        <a href="#" class="list-group-item list-group-item-action">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h6 class="mb-1"><i class="fas fa-building text-success me-2"></i>Commercial Properties</h6>
+                                <span class="badge bg-success">Quarterly</span>
+                            </div>
+                            <p class="mb-1 small">Office spaces, retail units, warehouses, and industrial properties</p>
+                            <small class="text-muted">Includes: Office blocks, shopping centers, warehouses, factories</small>
+                        </a>
+                        
+                        <a href="#" class="list-group-item list-group-item-action">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h6 class="mb-1"><i class="fas fa-university text-warning me-2"></i>Bank Mortgage Auctions</h6>
+                                <span class="badge bg-warning">Statutory</span>
+                            </div>
+                            <p class="mb-1 small">Statutory auction services for defaulted mortgage properties from financial institutions</p>
+                            <small class="text-muted">Full statutory compliance including notices and advertising</small>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="col-md-6">
+                    <h6 class="text-primary mb-3">Land Auction Services:</h6>
+                    <div class="row">
+                        <div class="col-md-12 mb-3">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h6 class="card-title"><i class="fas fa-map-marked-alt text-primary me-2"></i>Residential Plots</h6>
+                                    <p class="small">Urban and suburban residential plots, gated community plots, and serviced plots</p>
+                                    <p class="small text-muted mb-0">Sizes: 1/8 acre to 1 acre plots</p>
+                                </div>
                             </div>
                         </div>
-                        
-                        <div class="col-md-6">
-                            <h6 class="text-primary mb-3">Private & Commercial Auction Services:</h6>
+                        <div class="col-md-12 mb-3">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h6 class="card-title"><i class="fas fa-industry text-success me-2"></i>Commercial & Industrial Land</h6>
+                                    <p class="small">Commercial plots, industrial zones, and investment land parcels</p>
+                                    <p class="small text-muted mb-0">Prime locations for business development</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 mb-3">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h6 class="card-title"><i class="fas fa-tree text-warning me-2"></i>Agricultural Land</h6>
+                                    <p class="small">Farmland, agricultural plots, and rural land parcels</p>
+                                    <p class="small text-muted mb-0">Suitable for farming, livestock, or investment</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card bg-light">
+                        <div class="card-body">
+                            <h6 class="text-primary"><i class="fas fa-id-card me-2"></i>Our Credentials</h6>
+                            <ul class="list-unstyled small">
+                                <li class="mb-1"><i class="fas fa-certificate text-warning me-2"></i>Licensed Auctioneers - License No: AUC-12345-2024</li>
+                                <li class="mb-1"><i class="fas fa-shield-alt text-warning me-2"></i>Bonded and Insured: KES 10M Professional Indemnity</li>
+                                <li class="mb-0"><i class="fas fa-handshake text-warning me-2"></i>Registered with all Tier 1 & 2 Banks in Kenya</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row mt-4">
+                <div class="col-12">
+                    <div class="card border-primary">
+                        <div class="card-header bg-primary text-white">
+                            <h6 class="mb-0"><i class="fas fa-list-ol me-2"></i>Property & Land Auction Process</h6>
+                        </div>
+                        <div class="card-body">
                             <div class="row">
-                                <div class="col-md-6 mb-3">
-                                    <div class="card h-100">
-                                        <div class="card-body">
-                                            <h6 class="card-title"><i class="fas fa-home text-primary me-2"></i>Property Auctions</h6>
-                                            <p class="small">Residential, commercial, and industrial property auctions</p>
-                                            <p class="small text-muted mb-0">Commission: 2-5% of sale price</p>
-                                        </div>
+                                <div class="col-md-2">
+                                    <div class="text-center p-2">
+                                        <div class="bg-danger text-white rounded-circle mx-auto mb-2" style="width: 40px; height: 40px; line-height: 40px;">1</div>
+                                        <p class="mb-0 small"><strong>Instruction</strong></p>
+                                        <p class="small text-muted">Client/bank instruction</p>
                                     </div>
                                 </div>
-                                <div class="col-md-6 mb-3">
-                                    <div class="card h-100">
-                                        <div class="card-body">
-                                            <h6 class="card-title"><i class="fas fa-industry text-success me-2"></i>Business Auctions</h6>
-                                            <p class="small">Sale of going concerns, business assets, and company liquidation</p>
-                                            <p class="small text-muted mb-0">Commission: 3-6% of realization</p>
-                                        </div>
+                                <div class="col-md-2">
+                                    <div class="text-center p-2">
+                                        <div class="bg-danger text-white rounded-circle mx-auto mb-2" style="width: 40px; height: 40px; line-height: 40px;">2</div>
+                                        <p class="mb-0 small"><strong>Valuation</strong></p>
+                                        <p class="small text-muted">Professional property valuation</p>
                                     </div>
                                 </div>
-                                <div class="col-md-6 mb-3">
-                                    <div class="card h-100">
-                                        <div class="card-body">
-                                            <h6 class="card-title"><i class="fas fa-gem text-warning me-2"></i>High-Value Assets</h6>
-                                            <p class="small">Art, antiques, jewelry, and luxury goods auctions</p>
-                                            <p class="small text-muted mb-0">Commission: 10-20%</p>
-                                        </div>
+                                <div class="col-md-2">
+                                    <div class="text-center p-2">
+                                        <div class="bg-warning text-white rounded-circle mx-auto mb-2" style="width: 40px; height: 40px; line-height: 40px;">3</div>
+                                        <p class="mb-0 small"><strong>Marketing</strong></p>
+                                        <p class="small text-muted">30-day marketing campaign</p>
                                     </div>
                                 </div>
-                                <div class="col-md-6 mb-3">
-                                    <div class="card h-100">
-                                        <div class="card-body">
-                                            <h6 class="card-title"><i class="fas fa-tractor text-info me-2"></i>Agricultural Auctions</h6>
-                                            <p class="small">Farm equipment, livestock, and agricultural land auctions</p>
-                                            <p class="small text-muted mb-0">Commission: 5-8%</p>
-                                        </div>
+                                <div class="col-md-2">
+                                    <div class="text-center p-2">
+                                        <div class="bg-warning text-white rounded-circle mx-auto mb-2" style="width: 40px; height: 40px; line-height: 40px;">4</div>
+                                        <p class="mb-0 small"><strong>Viewing</strong></p>
+                                        <p class="small text-muted">Property inspection period</p>
                                     </div>
                                 </div>
-                            </div>
-                            
-                            <div class="card bg-light">
-                                <div class="card-body">
-                                    <h6 class="text-primary"><i class="fas fa-id-card me-2"></i>Our Credentials</h6>
-                                    <ul class="list-unstyled small">
-                                        <li class="mb-1"><i class="fas fa-certificate text-warning me-2"></i>Licensed Auctioneers - License No: AUC-12345-2024</li>
-                                        <li class="mb-1"><i class="fas fa-shield-alt text-warning me-2"></i>Bonded and Insured: KES 10M Coverage</li>
-                                        <li class="mb-0"><i class="fas fa-handshake text-warning me-2"></i>Registered with all major banks in Kenya</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="row mt-4">
-                        <div class="col-12">
-                            <div class="card border-primary">
-                                <div class="card-header bg-primary text-white">
-                                    <h6 class="mb-0"><i class="fas fa-list-ol me-2"></i>Bank Auction Process</h6>
-                                </div>
-                                <div class="card-body">
-                                    <div class="row">
-                                        <div class="col-md-2">
-                                            <div class="text-center p-2">
-                                                <div class="bg-danger text-white rounded-circle mx-auto mb-2" style="width: 40px; height: 40px; line-height: 40px;">1</div>
-                                                <p class="mb-0 small"><strong>Default Notice</strong></p>
-                                                <p class="small text-muted">45-day notice period</p>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-2">
-                                            <div class="text-center p-2">
-                                                <div class="bg-danger text-white rounded-circle mx-auto mb-2" style="width: 40px; height: 40px; line-height: 40px;">2</div>
-                                                <p class="mb-0 small"><strong>Statutory Notice</strong></p>
-                                                <p class="small text-muted">Publication in newspaper</p>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-2">
-                                            <div class="text-center p-2">
-                                                <div class="bg-warning text-white rounded-circle mx-auto mb-2" style="width: 40px; height: 40px; line-height: 40px;">3</div>
-                                                <p class="mb-0 small"><strong>Valuation</strong></p>
-                                                <p class="small text-muted">Professional valuation</p>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-2">
-                                            <div class="text-center p-2">
-                                                <div class="bg-warning text-white rounded-circle mx-auto mb-2" style="width: 40px; height: 40px; line-height: 40px;">4</div>
-                                                <p class="mb-0 small"><strong>Marketing</strong></p>
-                                                <p class="small text-muted">30-day marketing period</p>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-2">
-                                            <div class="text-center p-2">
-                                                <div class="bg-success text-white rounded-circle mx-auto mb-2" style="width: 40px; height: 40px; line-height: 40px;">5</div>
-                                                <p class="mb-0 small"><strong>Auction</strong></p>
-                                                <p class="small text-muted">Public auction event</p>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-2">
-                                            <div class="text-center p-2">
-                                                <div class="bg-success text-white rounded-circle mx-auto mb-2" style="width: 40px; height: 40px; line-height: 40px;">6</div>
-                                                <p class="mb-0 small"><strong>Settlement</strong></p>
-                                                <p class="small text-muted">Payment & transfer</p>
-                                            </div>
-                                        </div>
+                                <div class="col-md-2">
+                                    <div class="text-center p-2">
+                                        <div class="bg-success text-white rounded-circle mx-auto mb-2" style="width: 40px; height: 40px; line-height: 40px;">5</div>
+                                        <p class="mb-0 small"><strong>Auction</strong></p>
+                                        <p class="small text-muted">Public auction event</p>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="row mt-4">
-                        <div class="col-md-6">
-                            <div class="card">
-                                <div class="card-body">
-                                    <h6 class="text-primary mb-3"><i class="fas fa-calendar-alt me-2"></i>Upcoming Auctions</h6>
-                                    <div class="list-group">
-                                        <a href="#" class="list-group-item list-group-item-action">
-                                            <div class="d-flex w-100 justify-content-between">
-                                                <h6 class="mb-1">Residential Properties</h6>
-                                                <small class="text-muted">15th Monthly</small>
-                                            </div>
-                                            <p class="mb-1 small">Monthly bank property auction at our Nairobi auction hall</p>
-                                            <small class="text-muted">Viewing: 10th-14th monthly</small>
-                                        </a>
-                                        <a href="#" class="list-group-item list-group-item-action">
-                                            <div class="d-flex w-100 justify-content-between">
-                                                <h6 class="mb-1">Vehicle Auction</h6>
-                                                <small class="text-muted">Last Friday Monthly</small>
-                                            </div>
-                                            <p class="mb-1 small">Monthly vehicle auction at our yard along Mombasa Road</p>
-                                            <small class="text-muted">Viewing: Week before auction</small>
-                                        </a>
-                                        <a href="#" class="list-group-item list-group-item-action">
-                                            <div class="d-flex w-100 justify-content-between">
-                                                <h6 class="mb-1">Commercial Property</h6>
-                                                <small class="text-muted">Quarterly</small>
-                                            </div>
-                                            <p class="mb-1 small">High-value commercial property auctions</p>
-                                            <small class="text-muted">Next: March 30, 2024</small>
-                                        </a>
+                                <div class="col-md-2">
+                                    <div class="text-center p-2">
+                                        <div class="bg-success text-white rounded-circle mx-auto mb-2" style="width: 40px; height: 40px; line-height: 40px;">6</div>
+                                        <p class="mb-0 small"><strong>Completion</strong></p>
+                                        <p class="small text-muted">Payment & transfer</p>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                        
-                        <div class="col-md-6">
-                            <div class="card">
-                                <div class="card-body">
-                                    <h6 class="text-primary mb-3"><i class="fas fa-file-invoice-dollar me-2"></i>Fee Structure</h6>
-                                    <div class="table-responsive">
-                                        <table class="table table-sm">
-                                            <thead>
-                                                <tr>
-                                                    <th>Service</th>
-                                                    <th>Commission</th>
-                                                    <th>Minimum Fee</th>
-                                                    <th>Advertising</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>Bank Auctions</td>
-                                                    <td>5% of hammer price</td>
-                                                    <td>KES 50,000</td>
-                                                    <td>Included</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Private Property</td>
-                                                    <td>2-5% of sale price</td>
-                                                    <td>KES 25,000</td>
-                                                    <td>Client pays</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Vehicle Auctions</td>
-                                                    <td>8% of hammer price</td>
-                                                    <td>KES 10,000</td>
-                                                    <td>Included</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Movable Assets</td>
-                                                    <td>10-15%</td>
-                                                    <td>KES 5,000</td>
-                                                    <td>Included</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Debt Collection</td>
-                                                    <td>20% of recovery</td>
-                                                    <td>KES 15,000</td>
-                                                    <td>N/A</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                    <p class="small text-muted mb-0">*All fees exclude VAT. Buyer's premium may apply in addition to commission.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="alert alert-success mt-4">
-                        <div class="row">
-                            <div class="col-md-8">
-                                <h6><i class="fas fa-chart-line me-2"></i>Auction Performance Metrics:</h6>
-                                <div class="row">
-                                    <div class="col-md-4">
-                                        <p class="mb-1"><i class="fas fa-percentage text-primary me-2"></i><strong>Success Rate:</strong> 85%</p>
-                                        <p class="small">Properties sold at auction</p>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <p class="mb-1"><i class="fas fa-money-bill-wave text-success me-2"></i><strong>Average Price:</strong> 92%</p>
-                                        <p class="small">Of forced sale value achieved</p>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <p class="mb-1"><i class="fas fa-users text-warning me-2"></i><strong>Attendance:</strong> 50+</p>
-                                        <p class="small">Average bidders per auction</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="text-center">
-                                    <p class="mb-1"><strong>Annual Turnover:</strong></p>
-                                    <div class="display-6 text-primary">KES 500M+</div>
-                                    <p class="small">Property sold through auctions</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="alert alert-info">
-                        <h6><i class="fas fa-info-circle me-2"></i>Auction Participation Requirements:</h6>
-                        <div class="row mt-2">
-                            <div class="col-md-4">
-                                <p class="mb-1"><i class="fas fa-money-check-alt me-2"></i>10% deposit of maximum bid</p>
-                            </div>
-                            <div class="col-md-4">
-                                <p class="mb-1"><i class="fas fa-id-card me-2"></i>Original National ID/Passport</p>
-                            </div>
-                            <div class="col-md-4">
-                                <p class="mb-1"><i class="fas fa-pin me-2"></i>KRA PIN Certificate</p>
-                            </div>
-                            <div class="col-md-4">
-                                <p class="mb-1"><i class="fas fa-file-signature me-2"></i>Bidder registration form</p>
-                            </div>
-                            <div class="col-md-4">
-                                <p class="mb-1"><i class="fas fa-cash-register me-2"></i>Balance payment within 14 days</p>
-                            </div>
-                            <div class="col-md-4">
-                                <p class="mb-1"><i class="fas fa-gavel me-2"></i>Terms & conditions acceptance</p>
                             </div>
                         </div>
                     </div>
                 </div>
-            `
+            </div>
+            
+            <div class="row mt-4">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h6 class="text-primary mb-3"><i class="fas fa-calendar-alt me-2"></i>Upcoming Property Auctions</h6>
+                            <div class="list-group">
+                                <a href="#" class="list-group-item list-group-item-action">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h6 class="mb-1">Monthly Property Auction</h6>
+                                        <small class="text-muted">15th Monthly</small>
+                                    </div>
+                                    <p class="mb-1 small">Residential and commercial properties at our Nairobi auction hall</p>
+                                    <small class="text-muted">Viewing: 10th-14th monthly</small>
+                                </a>
+                                <a href="#" class="list-group-item list-group-item-action">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h6 class="mb-1">Land Parcels Auction</h6>
+                                        <small class="text-muted">Last Wednesday Monthly</small>
+                                    </div>
+                                    <p class="mb-1 small">Residential, commercial, and agricultural land parcels</p>
+                                    <small class="text-muted">Viewing: Week before auction</small>
+                                </a>
+                                <a href="#" class="list-group-item list-group-item-action">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h6 class="mb-1">Bank Property Auction</h6>
+                                        <small class="text-muted">Quarterly</small>
+                                    </div>
+                                    <p class="mb-1 small">High-value bank repossessed properties</p>
+                                    <small class="text-muted">Next: March 30, 2024</small>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h6 class="text-primary mb-3"><i class="fas fa-file-invoice-dollar me-2"></i>Commission Structure</h6>
+                            <div class="table-responsive">
+                                <table class="table table-sm">
+                                    <thead>
+                                        <tr>
+                                            <th>Property Type</th>
+                                            <th>Commission Rate</th>
+                                            <th>Minimum Fee</th>
+                                            <th>Advertising Fee</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Residential Properties</td>
+                                            <td>5% of hammer price</td>
+                                            <td>KES 50,000</td>
+                                            <td>Included</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Commercial Properties</td>
+                                            <td>4% of hammer price</td>
+                                            <td>KES 75,000</td>
+                                            <td>Included</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Residential Land</td>
+                                            <td>6% of hammer price</td>
+                                            <td>KES 30,000</td>
+                                            <td>KES 15,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Commercial Land</td>
+                                            <td>5% of hammer price</td>
+                                            <td>KES 50,000</td>
+                                            <td>KES 20,000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Bank Mortgage Auctions</td>
+                                            <td>5% of hammer price</td>
+                                            <td>KES 100,000</td>
+                                            <td>Included</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <p class="small text-muted mb-0">*All fees exclude 16% VAT. Reserve prices set at 75% of forced sale value.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row mt-4">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h6 class="text-primary mb-3"><i class="fas fa-bullhorn me-2"></i>Our Marketing Channels</h6>
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><i class="fas fa-newspaper text-primary me-2"></i><strong>Newspaper Advertisements:</strong> Daily Nation & Standard (Statutory requirement)</li>
+                                <li class="mb-2"><i class="fas fa-globe text-success me-2"></i><strong>Online Platforms:</strong> Our website, social media, property portals</li>
+                                <li class="mb-2"><i class="fas fa-mail-bulk text-warning me-2"></i><strong>Direct Marketing:</strong> Email campaigns to registered bidders</li>
+                                <li class="mb-2"><i class="fas fa-map-signs text-info me-2"></i><strong>On-Site Signage:</strong> Property signage and directional boards</li>
+                                <li class="mb-0"><i class="fas fa-users text-danger me-2"></i><strong>Auction Catalogues:</strong> Printed and digital catalogues</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h6 class="text-primary mb-3"><i class="fas fa-handshake me-2"></i>Bank Partnerships</h6>
+                            <p class="small mb-3">We are registered auctioneers with:</p>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <p class="mb-1"><i class="fas fa-university text-primary me-2"></i>Equity Bank</p>
+                                    <p class="mb-1"><i class="fas fa-university text-primary me-2"></i>KCB Bank</p>
+                                    <p class="mb-1"><i class="fas fa-university text-primary me-2"></i>Co-operative Bank</p>
+                                </div>
+                                <div class="col-md-6">
+                                    <p class="mb-1"><i class="fas fa-university text-primary me-2"></i>NCBA Bank</p>
+                                    <p class="mb-1"><i class="fas fa-university text-primary me-2"></i>Absa Bank</p>
+                                    <p class="mb-1"><i class="fas fa-university text-primary me-2"></i>Stanbic Bank</p>
+                                </div>
+                            </div>
+                            <div class="mt-3">
+                                <p class="small mb-0"><i class="fas fa-check-circle text-success me-2"></i>All statutory notices prepared and served in compliance with Auctioneers Act</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="alert alert-success mt-4">
+                <div class="row">
+                    <div class="col-md-8">
+                        <h6><i class="fas fa-chart-line me-2"></i>Auction Performance (2023):</h6>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <p class="mb-1"><i class="fas fa-percentage text-primary me-2"></i><strong>Success Rate:</strong> 88%</p>
+                                <p class="small">Properties sold at auction</p>
+                            </div>
+                            <div class="col-md-4">
+                                <p class="mb-1"><i class="fas fa-money-bill-wave text-success me-2"></i><strong>Average Price:</strong> 94%</p>
+                                <p class="small">Of forced sale value achieved</p>
+                            </div>
+                            <div class="col-md-4">
+                                <p class="mb-1"><i class="fas fa-users text-warning me-2"></i><strong>Attendance:</strong> 60+</p>
+                                <p class="small">Average bidders per auction</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="text-center">
+                            <p class="mb-1"><strong>Annual Volume:</strong></p>
+                            <div class="display-6 text-primary">250+</div>
+                            <p class="small">Properties & lands auctioned</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="alert alert-info">
+                <h6><i class="fas fa-info-circle me-2"></i>Bidder Requirements for Property Auctions:</h6>
+                <div class="row mt-2">
+                    <div class="col-md-4">
+                        <p class="mb-1"><i class="fas fa-money-check-alt me-2"></i>10% deposit of intended maximum bid</p>
+                    </div>
+                    <div class="col-md-4">
+                        <p class="mb-1"><i class="fas fa-id-card me-2"></i>Original National ID/Passport</p>
+                    </div>
+                    <div class="col-md-4">
+                        <p class="mb-1"><i class="fas fa-pin me-2"></i>KRA PIN Certificate</p>
+                    </div>
+                    <div class="col-md-4">
+                        <p class="mb-1"><i class="fas fa-file-signature me-2"></i>Bidder registration form</p>
+                    </div>
+                    <div class="col-md-4">
+                        <p class="mb-1"><i class="fas fa-cash-register me-2"></i>Balance payment within 30 days</p>
+                    </div>
+                    <div class="col-md-4">
+                        <p class="mb-1"><i class="fas fa-gavel me-2"></i>Terms & conditions acceptance</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="alert alert-warning">
+                <h6><i class="fas fa-exclamation-triangle me-2"></i>Important Notes:</h6>
+                <ul class="mb-0">
+                    <li>All properties sold "as is, where is" basis</li>
+                    <li>Buyer to conduct own due diligence before bidding</li>
+                    <li>Properties subject to existing encumbrances unless stated otherwise</li>
+                    <li>Successful bidders must pay balance within stipulated period or forfeit deposit</li>
+                    <li>All sales subject to reserve price and auctioneer's discretion</li>
+                </ul>
+            </div>
+        </div>
         }
-    ];
+        ];
+    `
+
+    
 }
+    
 
     async loadProperties() {
         try {
