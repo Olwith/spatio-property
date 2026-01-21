@@ -1,1 +1,186 @@
+/* Spatio Property Services - Professional Theme */
+:root {
+    --spatio-primary: #4f46e5;
+    --spatio-secondary: #1e1b4b;
+    --spatio-accent: #6366f1;
+    --spatio-light: #f8fafc;
+    --spatio-text: #334155;
+}
 
+body {
+    font-family: 'Inter', sans-serif;
+    color: var(--spatio-text);
+    background-color: var(--spatio-light);
+    overflow-x: hidden;
+}
+
+h1, h2, h3, .navbar-brand {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+}
+
+/* Navbar Customization */
+.navbar {
+    padding: 1.25rem 0;
+    transition: all 0.3s ease;
+}
+
+.navbar.scrolled {
+    background: #fff;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+    padding: 0.75rem 0;
+}
+
+.navbar-brand span {
+    color: var(--spatio-primary);
+}
+
+/* Hero Section */
+.hero-section {
+    height: 100vh;
+    background: linear-gradient(rgba(30, 27, 75, 0.85), rgba(30, 27, 75, 0.4)), url('https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&q=80&w=2000');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.hero-title {
+    font-size: 4.5rem;
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+}
+
+.cta-btn {
+    padding: 1rem 2.5rem;
+    border-radius: 0.75rem;
+    font-weight: 700;
+    transition: transform 0.2s;
+}
+
+.cta-btn:hover {
+    transform: translateY(-2px);
+}
+
+/* GIS Map */
+#map-container {
+    height: 600px;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1);
+}
+
+/* Property Cards */
+.property-card {
+    border: none;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    background: white;
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1);
+}
+
+.property-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1);
+}
+
+.property-img {
+    height: 240px;
+    object-fit: cover;
+}
+
+/* Admin Dashboard UI */
+.admin-sidebar {
+    background: white;
+    border-radius: 1.5rem;
+    padding: 1.5rem;
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1);
+}
+
+.stat-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    border-left: 5px solid var(--spatio-primary);
+}
+
+/* Floating Widgets */
+.floating-buttons {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.fab {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    transition: scale 0.2s;
+}
+
+.fab-whatsapp { background: #25d366; }
+.fab-phone { background: var(--spatio-primary); }
+
+.fab:hover {
+    scale: 1.1;
+    color: white;
+}
+
+/* Animation Classes */
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.animate-on-scroll.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.stagger-animate {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.4s ease;
+}
+
+.stagger-animate.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Utility Classes */
+.section-padding {
+    padding: 5rem 0;
+}
+
+.card-hover {
+    transition: all 0.3s ease;
+}
+
+.card-hover:hover {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Table Styling */
+.table-hover tbody tr:hover {
+    background-color: rgba(79, 70, 229, 0.05);
+}
+
+/* Form Styling */
+.form-control:focus {
+    border-color: var(--spatio-accent);
+    box-shadow: 0 0 0 0.25rem rgba(79, 70, 229, 0.25);
+}
